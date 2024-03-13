@@ -1,14 +1,7 @@
-llama_hub
-llama_index
+llama-index-core
+llama-index-llms-openai
 llama-index-readers-web
 llama-index-embeddings-huggingface
-braintrust
-autoevals
-pypdf
-pillow
-transformers
-torch
-torchvision
 openai
 python-dotenv
 matplotlib
