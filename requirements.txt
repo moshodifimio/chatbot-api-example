@@ -12,3 +12,5 @@ torchvision
 openai
 python-dotenv
 matplotlib
+fastapi
+uvicorn
