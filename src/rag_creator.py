@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+import os
 from typing import List
 
 from llama_index.core.node_parser import SimpleNodeParser
@@ -8,6 +9,8 @@ from llama_index.core.embeddings import resolve_embed_model
 from llama_index.core import VectorStoreIndex
 from llama_index.core.query_engine import RetrieverQueryEngine
 from llama_index.core.response.notebook_utils import display_source_node
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 class RAGCreator():
     def __init__(self):
