@@ -1,0 +1,13 @@
+llama_hub
+llama_index
+llama-index-embeddings-huggingface
+braintrust
+autoevals
+pypdf
+pillow
+transformers
+torch
+torchvision
+openai
+python-dotenv
+matplotlib
