@@ -1,5 +1,6 @@
 llama_hub
 llama_index
+llama-index-readers-web
 llama-index-embeddings-huggingface
 braintrust
 autoevals
