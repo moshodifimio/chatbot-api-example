@@ -26,13 +26,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Pre-define some useful HTML content
-html_success_header = "<h1>RAG Successfully Loaded</h1><h2>Configuration:</h2><table border='1'><tr><th>Parameter</th><th>Specification</th></tr>"
+# Required parameters for the RAG
+REQUIRED_FIMIO_PARAMS = {
+    "base_url": "https://fimio.xyz/blog/"
+}
 
 # Load the RAG and instantiate it globally
 rag = RAGCreator().setup_and_deploy_RAG(
     data_loader=FimioBlogWebReader,
-    data_loader_kwargs={"base_url":"https://fimio.xyz/blog/"}
+    data_loader_kwargs=REQUIRED_FIMIO_PARAMS
 )
 
 ### --- ENDPOINTS --- ###
